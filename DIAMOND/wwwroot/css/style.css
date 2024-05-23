@@ -340,6 +340,10 @@ textarea:focus {
 	text-align: center;
 }
 
+.line{
+	text-align:left
+}
+
 .relatext{
 	color: #000;
 	text-align: center;	

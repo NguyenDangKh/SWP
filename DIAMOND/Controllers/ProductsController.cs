@@ -45,6 +45,11 @@ namespace DIAMOND.Controllers
             return View();
         }
 
+        public IActionResult EarringsView()
+        {
+            return View();
+        }
+
         public IActionResult RingDetailView()
         {
             return View();

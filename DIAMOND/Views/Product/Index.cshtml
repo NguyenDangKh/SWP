@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "_Layout";
+}
+
+<div class="main-content">
+    <img src="https://websitedemos.net/blingg-jewelry-store-04/wp-content/uploads/sites/1119/2022/08/hero.jpg" alt="" style="width:100%;">
+    <div class="content">
+        <p>New collection</p>
+        <h1>The New Ring Sensation</h1>
+        <p>Demo...</p>
+        <button>Shop Now</button>
+    </div>
+    <!-- Brands List -->
+    <div class="brand-img">
+        <div class="brand-1"><img src="~/image/brand.png" alt=""></div>
+        <div class="brand-2"><img src="~/image/brand1.png" alt=""></div>
+        <div class="brand-3"><img src="~/image/brand2.png" alt=""></div>
+        <div class="brand-4"><img src="~/image/brand3.png" alt=""></div>
+    </div>
+    <!-- Trending -->
+    <div class="trending">
+        <section class="product">
+            <div class="product-present">
+                <p>Popular product</p>
+                <h2>TRENDING NOW</h2>
+            </div>
+            <div class="product-divider"><span class="product-divider-seperator"></span></div>
+        </section>
+        <section class="image-product">
+            @foreach (var product in Model)
+            {
+                <div class="image-product-1">
+                    <a href="@Url.Action("Detail", "Products", new { id = product.Id })">
+                        <img src="@product.ImageUrl" alt="@product.Name">
+                        <h2>@product.Name</h2>
+                    </a>
+                    <span class="price">
+                        <del>@product.OldPrice$</del>
+                        <ins>@product.NewPrice$</ins>
+                    </span>
+                </div>
+            }
+        </section>
+    </div>
+    <!-- Best Seller View -->
+    <div class="bestseller">
+        <section class="product">
+            <div class="product-present">
+                <p>Shop</p>
+                <h2>BEST SELLING</h2>
+            </div>
+            <div class="product-divider"><span class="product-divider-seperator"></span></div>
+        </section>
+        <section class="image-product">
+            @foreach (var product in Model)
+            {
+                <div class="image-product-1">
+                    <a href="@Url.Action("Detail", "Products", new { id = product.Id })">
+                        <img src="@product.ImageUrl" alt="@product.Name">
+                        <h2>@product.Name</h2>
+                    </a>
+                    <span class="price">
+                        <del>@product.OldPrice$</del>
+                        <ins>@product.NewPrice$</ins>
+                    </span>
+                </div>
+            }
+        </section>
+    </div>
+</div>

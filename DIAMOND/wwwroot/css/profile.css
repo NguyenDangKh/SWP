@@ -1,0 +1,95 @@
+﻿body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header .navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.container.search-bar {
+    margin-top: 20px;
+}
+
+.container.my-4 {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #a67c52;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #555;
+    font-family: 'Georgia', serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #333;
+    font-family: 'Georgia', serif;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #000;
+    background-color: white;
+}
+
+    .form-control:focus {
+        border-color: #a67c52;
+        outline: 0;
+        box-shadow: 0 0 5px rgba(166, 124, 82, 0.5);
+    }
+
+.btn-primary {
+    background-color: #999;
+    border-color: #248C46;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-family: 'Georgia', serif;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+    .btn-primary:hover {
+        background-color: #248C46;
+        border-color: #1F7A3B;
+    }
+
+.nav-link {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #333;
+}
+
+    .nav-link:hover {
+        color: #a67c52;
+    }
+
+.navbar-brand img {
+    max-height: 50px;
+}

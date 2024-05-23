@@ -1,0 +1,22 @@
+.founder{
+    margin: 40px 40px  ;
+}
+.aboutus-img img{
+    width: 100%;
+}
+.founder-img img{
+    width: 100%;
+}
+.aboutus-center{
+    margin: 40px 40px  ;
+}
+
+.aboutus-center-img img{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 94%;
+    
+}
+.aboutus-center-info .aboutus-center-img{
+    margin-top: 40px;
+}

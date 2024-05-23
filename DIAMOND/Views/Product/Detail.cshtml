@@ -1,0 +1,17 @@
+﻿@model Product
+
+@{
+    ViewBag.Title = "Product Detail";
+    Layout = "_Layout";
+}
+
+<div class="product-detail">
+    <h1>@Model.Name</h1>
+    <img src="@Model.ImageUrl" alt="@Model.Name" style="width:100%;">
+    <p>@Model.Description</p>
+    <span class="price">
+        <del>@Model.OldPrice$</del>
+        <ins>@Model.NewPrice$</ins>
+    </span>
+    <button>Add to Cart</button>
+</div>

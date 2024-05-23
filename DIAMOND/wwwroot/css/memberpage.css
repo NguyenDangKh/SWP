@@ -1,0 +1,142 @@
+﻿body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .navbar ul {
+        list-style-type: none;
+        margin-top: 0%;
+    }
+
+    .navbar li {
+        display: inline;
+        margin: 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+.main-logo {
+    align-items: center;
+    padding: 0%;
+    border: none;
+}
+
+    .main-logo img {
+        justify-content: space-between;
+    }
+
+.search-cart-icons {
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.main-content {
+    text-align: left;
+    position: relative;
+    margin: 1px 3px;
+}
+
+.content {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+.brand-img {
+    display: flex;
+    justify-content: center;
+}
+
+.product-present {
+    text-align: center;
+}
+
+.image-product-1 img {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    /* padding: 20px; */
+    /* width: calc(25% - 20px); */
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.image-product {
+    display: flex;
+    margin-left: 100px;
+}
+
+.img-product1 img {
+    height: 500px;
+}
+
+.image-product-1 {
+    margin: 10px;
+}
+
+.trending {
+    margin-bottom: 20px;
+}
+
+.product-info {
+    width: 100%;
+    height: auto;
+}
+
+    .product-info ul {
+        list-style-type: none;
+        margin-top: 0%;
+        margin-left: 100px;
+    }
+
+    .product-info li {
+        display: inline-block;
+        margin-right: 150px;
+    }
+
+.line {
+    text-align: center;
+    margin: 20px;
+}
+
+.more-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="~/css/shoppingcart.css">
+    <link rel="stylesheet" href="~/css/footer.css">
+</head>
+<body>
+   
+
+    <div class="user-info">
+        <div class="shopping-cart">
+            <h1>Shopping cart</h1>
+            <div class="cart-header">
+                <div class="product-title">Product</div>
+                <div class="product-price">Price</div>
+                <div class="product-quantity">Quantity</div>
+                <div class="product-total">Total</div>
+            </div>
+            <div class="cart-item" data-price="100000">
+                <div class="product">
+                    <img src="https://i.ibb.co/RbKMjXH/GNDD00-W004380-GNDD00-W004379-1.png" alt="Product 1">
+                    <div class="product-info">
+                        <h2>Diamond Ring</h2>
+                        <p>Mô tả ngắn gọn của sản phẩm 1</p>
+                    </div>
+                </div>
+                <div class="price">₫100,000</div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" class="quantity-input">
+                </div>
+                <div class="total">₫100,000</div>
+            </div>
+            <div class="cart-item" data-price="200000">
+                <div class="product">
+                    <img src="https://i.ibb.co/KD7NsdB/sp-gnrbxmy001202-nhan-vang-18k-dinh-da-ruby-pnj-01.png" alt="Product 2">
+                    <div class="product-info">
+                        <h2>Diamond necklace </h2>
+                        <p>Mô tả ngắn gọn của sản phẩm 2</p>
+                    </div>
+                </div>
+                <div class="price">₫200,000</div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" class="quantity-input">
+                </div>
+                <div class="total">₫200,000</div>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">
+                    Total: <span id="grand-total">₫300,000</span>
+                </div>
+                <button class="checkout-button">Order</button>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const quantityInputs = document.querySelectorAll('.quantity-input');
+                const cartItems = document.querySelectorAll('.cart-item');
+                const grandTotalElement = document.getElementById('grand-total');
+
+                function updateTotal() {
+                    let grandTotal = 0;
+
+                    cartItems.forEach(item => {
+                        const price = parseInt(item.getAttribute('data-price'));
+                        const quantity = parseInt(item.querySelector('.quantity-input').value);
+                        const total = price * quantity;
+                        item.querySelector('.total').innerText = `₫${total.toLocaleString()}`;
+                        grandTotal += total;
+                    });
+
+                    grandTotalElement.innerText = `₫${grandTotal.toLocaleString()}`;
+                }
+
+                quantityInputs.forEach(input => {
+                    input.addEventListener('change', updateTotal);
+                });
+
+                updateTotal(); // Initialize total on page load
+            });
+        </script>
+</body>
+</html>

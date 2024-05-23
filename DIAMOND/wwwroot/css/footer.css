@@ -1,0 +1,64 @@
+﻿.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items vertically */
+    background-color: #faf5f0;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%; /* Chiều rộng 100% */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+.footer-section {
+    flex: 1; /* Equal width for each section */
+    margin: 0 10px; /* Adjust margin */
+    text-align: center;
+}
+
+    .footer-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .footer-links a {
+        text-decoration: none;
+        color: #000;
+        margin: 5px 0;
+        transition: color 0.3s;
+    }
+
+        .footer-links a:hover {
+            color: #007bff;
+        }
+
+.address-content p {
+    margin: 5px 0;
+}
+
+.logo-footer {
+    flex: 1; /* Occupy remaining space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+    .logo-footer img {
+        height: auto;
+        width: 150px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+.copyright {
+    text-align: center;
+    background-color: #faf5f0;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}

@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/profile.css">
+<div class="container my-4">
+    <h2>Profile</h2>
+    <form id="profileForm">
+        <div class="mb-3">
+            <label for="fullname" class="form-label">Fullname</label>
+            <input type="text" class="form-control" id="fullname" placeholder="Enter your fullname">
+        </div>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" value="@User.Identity.Name" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" value="@User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Email)?.Value" readonly>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="saveProfile()">Cập nhật</button>
+
+    </form>
+</div>
+<script>
+    function saveProfile() {
+        const fullname = document.getElementById('fullname').value;
+        localStorage.setItem('fullname', fullname);
+        alert('Profile updated successfully!');
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        const fullname = localStorage.getItem('fullname');
+        if (fullname) {
+            document.getElementById('fullname').value = fullname;
+        }
+    });
+    function logout() {
+        localStorage.removeItem('fullname'); // Xóa dữ liệu fullname khỏi Local Storage
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        const fullname = localStorage.getItem('fullname');
+        if (fullname) {
+            document.getElementById('fullname').value = fullname;
+        }
+        // Xóa dữ liệu fullname từ Local Storage sau khi đã sử dụng nó
+        localStorage.removeItem('fullname');
+    });
+    let fullnameUsed = false; // Biến flag để xác định xem dữ liệu fullname đã được sử dụng hay chưa
+
+    document.addEventListener('DOMContentLoaded', function () {
+        if (!fullnameUsed) {
+            const fullname = localStorage.getItem('fullname');
+            if (fullname) {
+                document.getElementById('fullname').value = fullname;
+            }
+            // Xóa dữ liệu fullname từ Local Storage sau khi đã sử dụng nó
+            localStorage.removeItem('fullname');
+            fullnameUsed = true; // Đánh dấu rằng dữ liệu fullname đã được sử dụng
+        }
+    });
+
+
+</script>

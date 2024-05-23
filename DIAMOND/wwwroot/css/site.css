@@ -1,0 +1,153 @@
+﻿/* CSS cho header */
+header {
+    padding: 10px;
+    background-color: #f8f9fa; /* Màu nền của header */
+}
+
+.navbar-brand img {
+    max-width: 150px; /* Điều chỉnh kích thước của logo */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Đẩy phần navbar-nav sang phải */
+}
+
+    .navbar-nav .nav-item {
+        margin-right: 10px; /* Khoảng cách giữa các mục trong thanh điều hướng */
+    }
+
+.item-1 {
+    margin: 8px 0px 0px 0px;
+}
+
+    .item-1 a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, .55);
+    }
+
+/* CSS cho form đăng nhập */
+.login-form {
+    display: none; /* Ẩn form đăng nhập ban đầu */
+    position: fixed; /* Vị trí cố định trên màn hình */
+    top: 50%; /* Dịch chuyển lên trên 50% */
+    left: 50%; /* Dịch chuyển sang trái 50% */
+    transform: translate(-50%, -50%); /* Dịch chuyển ngược lại 50% của chiều rộng và chiều cao */
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    z-index: 1050;
+}
+
+    .login-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0; /* Thêm thuộc tính top và đặt giá trị là 0 */
+    /* Các thuộc tính khác (ví dụ: width, height, margin) */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"],
+.login-form .login-with-google button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input[type="submit"],
+.login-form .login-with-google button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+    .login-form input[type="submit"]:hover,
+    .login-form .login-with-google button:hover {
+        background-color: #0056b3;
+    }
+
+.login-form .login-with-google {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form .register-link {
+    text-align: center;
+}
+
+.header {
+    background-image: url('/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Điều chỉnh độ cao của phần header tùy thuộc vào chiều cao của ảnh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Màu chữ trên background */
+    text-align: center; /* Căn giữa nội dung */
+    margin-bottom: 40px;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Đảm bảo thanh điều hướng nằm trên cùng */
+}
+
+/* CSS cho phần sản phẩm */
+.product-section {
+    padding: 20px 0;
+}
+
+.product-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        height: 400px;
+    }
+
+    .product-item h5 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .product-item p {
+        margin-bottom: 5px;
+    }
+
+    .product-item .price {
+        font-weight: bold;
+        color: #007bff;
+    }
+/*#fixed-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;*/ /* Adjust as needed */
+/*text-align: center;*/ /* Center align text if needed */
+/*padding: 10px;*/ /* Add padding as needed */
+/*z-index: 1000;*/ /* Ensure it's above other elements */
+/*}*/
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}

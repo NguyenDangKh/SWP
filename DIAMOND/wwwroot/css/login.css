@@ -1,0 +1,97 @@
+﻿/*Back To Home*/
+.back-home {
+    margin: 30px 50px;
+    width: 142px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+}
+
+    .back-home h3 {
+        text-decoration: none;
+        position: relative;
+        top: 5px;
+        left: 10px;
+        color: black;
+    }
+
+/*Login Frame*/
+.login-frame {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: 40%;
+}
+
+#Logo {
+    width: 350px;
+    height: 200px;
+}
+
+.login-with-google img {
+    width: 20px;
+    height: 20px;
+}
+
+#login-title {
+    padding-left: 25%;
+}
+
+/*Login Form*/
+.form-login input {
+    width: 60%;
+    margin-top: 10px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: #eeeeee;
+}
+
+#submit-login {
+    background-color: black;
+    color: white;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+/*Login with Google*/
+#other-services {
+    width: 62%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 28px 0 20px;
+}
+
+    #other-services span {
+        background: #fff;
+        padding: 0 10px;
+    }
+
+.login-with-google {
+    position: absolute;
+    width: 150px;
+    margin-left: 55px;
+    margin-top: 14px;
+}
+
+    .login-with-google span {
+        position: relative;
+        bottom: 5px;
+    }
+
+.btn-login {
+    width: 260px;
+}
+
+/*Term of Service*/
+#terms-service {
+    margin-left: 38%;
+    margin-top: 65px;
+}
+
+.register-link {
+    margin-left: 44%;
+}

@@ -1,0 +1,64 @@
+﻿@{
+	Layout = null;
+	ViewBag.Title = "Register";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Register</title>
+	<link rel="stylesheet" href="~/css/signup.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+	<div class="signup-container">
+		<!-- Sample -->
+		<img class="signup-items item-1" src="~/image/register.png" alt="Register" />
+
+		<div class="signup-items item-2">
+			<!-- Logo -->
+			<img id="Logo" src="~/image/Logo.jpg" alt="Logo" />
+			<div>
+				<!-- Sign Up Header -->
+				<h1 id="signup-title">Sign Up</h1>
+
+				<!-- Sign Up Form -->
+				<form action="/" method="post" class="form-signup">
+					<!-- Username -->
+					<span>Username</span><br />
+					<input type="text" placeholder="Username" /> <br />
+					<!-- Full Name -->
+					<span>Full Name</span><br />
+					<input type="text" placeholder="Full Name" /> <br />
+					<!-- Password -->
+					<span>Password</span><br />
+					<input type="password" placeholder="Password" /><br />
+					<!-- Confirm Password -->
+					<span>Confirm Password</span><br />
+					<input type="password" placeholder="Confirm Password" /><br />
+					<!-- Email -->
+					<span>Email</span><br />
+					<input type="text" placeholder="Email" /><br />
+					<input id="submit-signup" type="submit" value="Sign Up">
+				</form>
+
+				<!--Back To Home Link-->
+				<a asp-controller="Home" asp-action="Home" class="selections-items">
+					<div class="back-home">
+						<h3> <i class="fa-solid fa-angles-left"></i> Back To Home</h3>
+					</div>
+				</a>
+
+				<!-- Login Page -->
+				<div class="selections-items login-link">
+					<p>Already have an account? <a asp-controller="Home" asp-action="Login">Login here</a></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

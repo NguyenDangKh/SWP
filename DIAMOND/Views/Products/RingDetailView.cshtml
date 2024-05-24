@@ -122,6 +122,23 @@
                 </div>
             </div>
         </div>
+
+        <div class="form-container" id="commentForm" style="color=black">
+            <form method="post">
+                <div class="form-group">
+                    <label class="form-label" for="myeditor">Bình luận</label>
+                    <textarea class="form-control textarea" name="content" id="myeditor"></textarea>
+                </div>
+                <div class="form-group submit-group">
+                    <button type="submit" class="btn-primary">Gửi</button>
+                    <a href="#"></a>
+                </div>
+            </form>
+            <div class="overlay" id="loginMessage">
+                Vui lòng <a href="href=" @Url.Action("Login", "Login")">đăng nhập để bình luận.</a>
+            </div>
+        </div>
+
         <div class="others">
             <h4>Related products</h4>
             <div class="related-product">
@@ -163,21 +180,8 @@
 
     </div>
 
-    <div class="form-container" id="commentForm">
-        <form method="post">
-            <div class="form-group">
-                <label class="form-label" for="myeditor">Bình luận</label>
-                <textarea class="form-control textarea" name="content" id="myeditor"></textarea>
-            </div>
-            <div class="form-group submit-group">
-                <button type="submit" class="btn-primary">Gửi</button>
-            </div>
-        </form>
-        <div class="overlay" id="loginMessage">
-            Vui lòng <a href="@Url.Action("Login","Login")>đăng nhập</a> để bình luận.
-        </div>
-    </div>
-</div>
+    
+
 
     
 

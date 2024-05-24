@@ -1,0 +1,32 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const orders = [
+        { orderId: '1001', item: 'Diamond Ring', date: '2024-05-01', customerName: 'Nguyen Van A', total: '$5000', status: 'Delivered' },
+        { orderId: '1002', item: 'Diamond Necklace', date: '2024-05-02', customerName: 'Tran Thi B', total: '$7000', status: 'Pending' },
+        { orderId: '1003', item: 'Diamond Earrings', date: '2024-05-03', customerName: 'Le Van C', total: '$3000', status: 'Cancelled' },
+        { orderId: '1004', item: 'Diamond Bracelet', date: '2024-05-04', customerName: 'Pham Thi D', total: '$4000', status: 'Shipped' },
+        { orderId: '1005', item: 'Diamond Pendant', date: '2024-05-05', customerName: 'Nguyen Van E', total: '$3500', status: 'Delivered' },
+        { orderId: '1006', item: 'Diamond Watch', date: '2024-05-06', customerName: 'Tran Thi F', total: '$8000', status: 'Pending' },
+        { orderId: '1007', item: 'Diamond Brooch', date: '2024-05-07', customerName: 'Le Van G', total: '$4500', status: 'Cancelled' },
+        { orderId: '1008', item: 'Diamond Cufflinks', date: '2024-05-08', customerName: 'Pham Thi H', total: '$5000', status: 'Shipped' },
+        { orderId: '1009', item: 'Diamond Anklet', date: '2024-05-09', customerName: 'Nguyen Van I', total: '$2500', status: 'Delivered' },
+        { orderId: '1010', item: 'Diamond Tiara', date: '2024-05-10', customerName: 'Tran Thi J', total: '$10000', status: 'Pending' },
+        // Add more orders as needed
+    ];
+
+    const orderList = document.getElementById('order-list');
+
+    orders.forEach(order => {
+        const row = document.createElement('tr');
+        
+        row.innerHTML = `
+            <td>${order.orderId}</td>
+            <td>${order.item}</td>
+            <td>${order.date}</td>
+            <td>${order.customerName}</td>
+            <td>${order.total}</td>
+            <td>${order.status}</td>
+        `;
+        
+        orderList.appendChild(row);
+    });
+});

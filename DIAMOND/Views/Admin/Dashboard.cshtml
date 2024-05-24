@@ -1,142 +1,211 @@
 ﻿@{
-    Layout = "_LeftNavBarLayout";
+	Layout = "_LeftNavBarLayout";
 }
 
-<div class="section-admin container-fluid res-mg-t-15">
-    <div class="row admin text-center">
-        <div class="col-md-12">
-        </div>
-    </div>
-</div>
-<div class="product-sales-area mg-tb-30">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="product-sales-chart">
-                    <div class="portlet-title">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="caption pro-sl-hd">
-                                    <span class="caption-subject text-uppercase"><b>Product Sales</b></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="actions graph-rp">
-                                    <div class="btn-group" data-toggle="buttons">
-                                        <label class="btn btn-grey active">
-                                            <input type="radio" name="options" class="toggle" id="option1" checked="">Today
-                                        </label>
-                                        <label class="btn btn-grey">
-                                            <input type="radio" name="options" class="toggle" id="option2">Week
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="curved-line-chart" class="flot-chart-sts flot-chart curved-chart-statistic"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="traffic-analysis-area">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="white-box tranffic-als-inner">
-                    <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"><i class="fa fa-sort-asc"></i> 18% last month</small> Site Traffic</h3>
-                    <div class="stats-row">
-                        <div class="stat-item">
-                            <h6>Overall Growth</h6>
-                            <b>80.40%</b>
-                        </div>
-                        <div class="stat-item">
-                            <h6>Montly</h6>
-                            <b>15.40%</b>
-                        </div>
-                        <div class="stat-item">
-                            <h6>Day</h6>
-                            <b>5.50%</b>
-                        </div>
-                    </div>
-                    <div id="sparkline8"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="white-box tranffic-als-inner res-mg-t-30">
-                    <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-two"><i class="fa fa-sort-desc"></i> 18% last month</small>Site Traffic</h3>
-                    <div class="stats-row">
-                        <div class="stat-item">
-                            <h6>Overall Growth</h6>
-                            <b>80.40%</b>
-                        </div>
-                        <div class="stat-item">
-                            <h6>Montly</h6>
-                            <b>15.40%</b>
-                        </div>
-                        <div class="stat-item">
-                            <h6>Day</h6>
-                            <b>5.50%</b>
-                        </div>
-                    </div>
-                    <div id="sparkline9"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="white-box tranffic-als-inner res-mg-t-30">
-                    <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-three"><i class="fa fa-sort-asc"></i> 18% last month</small>Site Traffic</h3>
-                    <div class="stats-row">
-                        <div class="stat-item">
-                            <h6>Overall Growth</h6>
-                            <b>80.40%</b>
-                        </div>
-                        <div class="stat-item">
-                            <h6>Montly</h6>
-                            <b>15.40%</b>
-                        </div>
-                        <div class="stat-item">
-                            <h6>Day</h6>
-                            <b>5.50%</b>
-                        </div>
-                    </div>
-                    <div id="sparkline10"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<main class="content">
+	<div class="container-fluid p-0">
 
-<div class="product-sales-area mg-tb-30">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="product-sales-chart">
-                    <div class="portlet-title">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="caption pro-sl-hd">
-                                    <span class="caption-subject text-uppercase"><b>Order Statistic</b></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="actions graph-rp">
-                                    <a href="#" class="btn btn-dark-blue btn-circle active tip-top" data-toggle="tooltip" title="Upload">
-                                        <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-dark btn-circle active tip-top" data-toggle="tooltip" title="Refresh">
-                                        <i class="fa fa-reply" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-blue-grey btn-circle active tip-top" data-toggle="tooltip" title="Delete">
-                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="line-chart" class="flot-chart flot-chart-sts line-chart-statistic"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+		<h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
+
+		<div class="row">
+			<div class="col-xl-6 col-xxl-5 d-flex">
+				<div class="w-100">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Sales</h5>
+										</div>
+
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="truck"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">2.382</h1>
+									<div class="mb-0">
+										<span class="text-danger">-3.65%</span>
+										<span class="text-muted">Since last week</span>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Visitors</h5>
+										</div>
+
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="users"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">14.212</h1>
+									<div class="mb-0">
+										<span class="text-success">5.25%</span>
+										<span class="text-muted">Since last week</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Earnings</h5>
+										</div>
+
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="dollar-sign"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">$21.300</h1>
+									<div class="mb-0">
+										<span class="text-success">6.65%</span>
+										<span class="text-muted">Since last week</span>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Orders</h5>
+										</div>
+
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="shopping-cart"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">64</h1>
+									<div class="mb-0">
+										<span class="text-danger">-2.25%</span>
+										<span class="text-muted">Since last week</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-6 col-xxl-7">
+				<div class="card flex-fill w-100">
+					<div class="card-header">
+
+						<h5 class="card-title mb-0">Recent Movement</h5>
+					</div>
+					<div class="card-body py-3">
+						<div class="chart chart-sm">
+							<canvas id="chartjs-dashboard-line"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-lg-8 col-xxl-9 d-flex">
+				<div class="card flex-fill">
+					<div class="card-header">
+
+						<h5 class="card-title mb-0">Latest Projects</h5>
+					</div>
+					<table class="table table-hover my-0">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th class="d-none d-xl-table-cell">Start Date</th>
+								<th class="d-none d-xl-table-cell">End Date</th>
+								<th>Status</th>
+								<th class="d-none d-md-table-cell">Assignee</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Project Apollo</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-success">Done</span></td>
+								<td class="d-none d-md-table-cell">Vanessa Tucker</td>
+							</tr>
+							<tr>
+								<td>Project Fireball</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-danger">Cancelled</span></td>
+								<td class="d-none d-md-table-cell">William Harris</td>
+							</tr>
+							<tr>
+								<td>Project Hades</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-success">Done</span></td>
+								<td class="d-none d-md-table-cell">Sharon Lessman</td>
+							</tr>
+							<tr>
+								<td>Project Nitro</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-warning">In progress</span></td>
+								<td class="d-none d-md-table-cell">Vanessa Tucker</td>
+							</tr>
+							<tr>
+								<td>Project Phoenix</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-success">Done</span></td>
+								<td class="d-none d-md-table-cell">William Harris</td>
+							</tr>
+							<tr>
+								<td>Project X</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-success">Done</span></td>
+								<td class="d-none d-md-table-cell">Sharon Lessman</td>
+							</tr>
+							<tr>
+								<td>Project Romeo</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-success">Done</span></td>
+								<td class="d-none d-md-table-cell">Christina Mason</td>
+							</tr>
+							<tr>
+								<td>Project Wombat</td>
+								<td class="d-none d-xl-table-cell">01/01/2023</td>
+								<td class="d-none d-xl-table-cell">31/06/2023</td>
+								<td><span class="badge bg-warning">In progress</span></td>
+								<td class="d-none d-md-table-cell">William Harris</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+				<div class="card flex-fill w-100">
+					<div class="card-header">
+
+						<h5 class="card-title mb-0">Monthly Sales</h5>
+					</div>
+					<div class="card-body d-flex w-100">
+						<div class="align-self-center chart chart-lg">
+							<canvas id="chartjs-dashboard-bar"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</main>

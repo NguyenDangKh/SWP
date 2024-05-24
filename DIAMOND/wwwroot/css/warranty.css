@@ -1,0 +1,58 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.warranty-certificate {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+    .warranty-certificate h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.warranty-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .warranty-table th, .warranty-table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .warranty-table th {
+        background-color: #f2f2f2;
+    }
+
+.view-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .view-button:hover {
+        background-color: #0056b3;
+    }
+.nav-link {
+    border: 1px solid transparent; /* Đảm bảo viền ban đầu là trong suốt */
+    transition: border-color 0.3s; /* Thời gian chuyển đổi */
+}
+
+    .nav-link:focus,
+    .nav-link:hover {
+        border-color: #000; /* Màu viền khi nút được nhấn hoặc di chuột qua */
+    }

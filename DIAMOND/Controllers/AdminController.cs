@@ -18,7 +18,13 @@ namespace DIAMOND.Controllers
         {
             return View();
         }
+
         public IActionResult ProductView()
+        {
+            return View();
+        }
+
+        public IActionResult CertificationView()
         {
             return View();
         }

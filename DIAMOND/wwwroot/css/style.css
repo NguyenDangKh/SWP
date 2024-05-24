@@ -1,4 +1,4 @@
-/*======================
+﻿/*======================
    01. Google fonts
 ========================*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
@@ -39,7 +39,7 @@ body {
 	line-height: 26px;
 
 	color: #ffffff;
-	font-family: 'Rubik', sans-serif;
+	font-family: sans-serif;
 }
 
 ol,
@@ -151,7 +151,7 @@ textarea:focus {
 }
 
 .product-box h2 {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family:  sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	margin-bottom: 15px;
@@ -340,8 +340,13 @@ textarea:focus {
 	text-align: center;
 }
 
+.line{
+	text-align:left;
+}
+
 .relatext{
 	color: #000;
 	text-align: center;	
 }
+
 

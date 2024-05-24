@@ -54,15 +54,15 @@
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										@User.Identity.Name
 								</a>
+								<!-- Navbar when user login successfully -->
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" asp-controller="Member" asp-action="Order">Đơn mua</a></li>									
+									<li><a class="dropdown-item" asp-controller="Member" asp-action="Order">Đơn mua</a></li>
 									<li><hr class="dropdown-divider"></li>
 									<li><a class="dropdown-item" asp-controller="Member" asp-action="Profile">Profile</a></li>
 									<li><hr class="dropdown-divider"></li>
 									<li><a class="dropdown-item" asp-controller="Member" asp-action="warranty"> Phiếu bảo hành</a></li>
 									<li><hr class="dropdown-divider"></li>
 									<li><a class="dropdown-item" asp-controller="Login" asp-action="Logout">Logout</a></li>
-
 								</ul>
 							</li>
 							}

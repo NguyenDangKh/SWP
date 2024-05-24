@@ -13,11 +13,11 @@ namespace DIAMOND.Controllers
         {
             return View();
         }
-        public IActionResult warranty() 
+        public IActionResult Warranty() 
         {
             return View();
         }
-        public IActionResult warranty_detail() {
+        public IActionResult Warranty_detail() {
             return View();
         }
     }

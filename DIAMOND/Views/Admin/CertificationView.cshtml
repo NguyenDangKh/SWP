@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "_LeftNavBarLayout";
 }
-
+<link href="~/css/CertiView.css" rel="stylesheet" type="text/css" />
 <div class="product-status mg-b-30">
     <div class="container-fluid">
         <div class="row">
@@ -24,12 +24,13 @@
                             <th>Color grade</th>
                             <th>Clarity grade</th>
                             <th>Cut grade</th>
-                            <th>Certificate</th>
+                            <th>View</th>
+                            <th>Actions</th>
                         </tr>
                         <tr>
                             <td>GIA</td>
                             <td>6223985137</td>
-                            <td><img src="~/image/certi1/1-1.png" alt="Product image" /></td>
+                            <td><img class="img1" src="~/image/certi1/1-1.png" alt="Product image" /></td>
                             <td>1.16 Ct Radiant cut H SI2 Loose Diamond</td>
                             <td>June 21, 2023</td>
                             <td>Cut-cornered rectangular modified brilliant</td>
@@ -51,7 +52,7 @@
                         <tr>
                              <td>GIA</td>
                             <td>6227343764</td>
-                            <td><img src="~/image/certi2/2-1.png" alt="Product image" /></td>
+                            <td><img class="img1" src="~/image/certi2/2-1.png" alt="Product image" /></td>
                             <td>0.57 Ct Radiant cut K SI1 Loose Diamond</td>
                             <td>March 22, 2022</td>
                             <td>Cut-cornered square modified brilliant</td>
@@ -61,6 +62,7 @@
                             <td>SI1</td>
                             <td></td>
                             <td><a href="~/image/certi2/2-2.png" target=”_blank”>View</a></td>
+                            <td>
                                 <button data-toggle="tooltip" title="Edit" class="pd-setting-ed">
                                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                 </button>
@@ -72,7 +74,7 @@
                         <tr>
                              <td>GIA</td>
                             <td>518137991</td>
-                            <td><img src="~/image/certi3/3-1.png" alt="Product image" /></td>
+                            <td><img class="img1" src="~/image/certi3/3-1.png" alt="Product image" /></td>
                             <td>0.55 Ct Round cut G VS1 Loose Diamond</td>
                             <td>April 12, 2023</td>
                             <td>Round brilliant</td>
@@ -94,7 +96,7 @@
                         <tr>
                             <td>GIA</td>
                             <td>2185224490</td>
-                            <td><img src="~/image/certi4/4-1.png" alt="Display certificate   " /></td>
+                            <td><img class="img1" src="~/image/certi4/4-1.png" alt="Display certificate   " /></td>
                             <td>2.73 Ct Oval cut E I1 Loose Diamond</td>
                             <td>July 11, 2022</td>
                             <td>Oval modified brilliant</td>
@@ -102,19 +104,21 @@
                             <td>2.73 carat</td>
                             <td>E</td>
                             <td>I1</td>
+                            <td></td>
                             <td><a href="~/image/certi4/4-2.png" target=”_blank”>View</a></td>
+                            <td>
                                 <button data-toggle="tooltip" title="Edit" class="pd-setting-ed">
                                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                 </button>
-                            <button data-toggle="tooltip" title="Remove" class="pd-setting-ed">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </button>
+                                <button data-toggle="tooltip" title="Remove" class="pd-setting-ed">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>   <!--done4-->
                         <tr>
                             <td>GIA</td>
                             <td>5383527832</td>
-                            <td><img src="~/image/certi5/5-1.png" alt="Display certificate   " /></td>
+                            <td><img class="img1" src="~/image/certi5/5-1.png" alt="Display certificate   " /></td>
                             <td>1.00 Ct Pear cut D SI1 Loose Diamond</td>
                             <td>June 21, 2023</td>
                             <td>Pear brilliant</td>
@@ -124,18 +128,19 @@
                             <td>SI1</td>
                             <td></td>
                             <td><a href="~/image/certi5/5-2.png" target=”_blank”>View</a></td>
-                            <button data-toggle="tooltip" title="Edit" class="pd-setting-ed">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                            <button data-toggle="tooltip" title="Remove" class="pd-setting-ed">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </button>
+                            <td>
+                                <button data-toggle="tooltip" title="Edit" class="pd-setting-ed">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                </button>
+                                <button data-toggle="tooltip" title="Remove" class="pd-setting-ed">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>   <!--done5-->
                         <tr>
                             <td>GIA</td>
                             <td>2225080393</td>
-                            <td><img src="~/image/certi6/6-1.png" alt="Display certificate   " /></td>
+                            <td><img class="img1" src="~/image/certi6/6-1.png" alt="Display certificate   " /></td>
                             <td>1.40 Ct Emerald cut G VS1 Loose Diamond</td>
                             <td>October 16, 2021</td>
                             <td>Emerald cut</td>
@@ -145,12 +150,13 @@
                             <td>VS1</td>
                             <td></td>
                             <td><a href="~/image/certi6/6-2.png" target=”_blank”>View</a></td>
-                            <button data-toggle="tooltip" title="Edit" class="pd-setting-ed">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                            <button data-toggle="tooltip" title="Remove" class="pd-setting-ed">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </button>
+                            <td>
+                                <button data-toggle="tooltip" title="Edit" class="pd-setting-ed">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                </button>
+                                <button data-toggle="tooltip" title="Remove" class="pd-setting-ed">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>   <!--done6-->
                     </table>

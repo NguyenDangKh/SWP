@@ -23,16 +23,27 @@ namespace DIAMOND.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
 
         public IActionResult OrderManager() {
             return View();
             }
+=======
+        public IActionResult OrderManager()
+        {
+            return View();
+        }
+
+>>>>>>> d3e1c1d3a8fd1625ec7fe0b4c9ade5d11d6c05a7
         public IActionResult CertificationView()
         {
             return View();
         }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d3e1c1d3a8fd1625ec7fe0b4c9ade5d11d6c05a7
     }
 }

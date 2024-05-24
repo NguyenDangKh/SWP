@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="~/image/blog-img/favicon.ico">
+	<title>Mediumish - A Medium style template by WowThemes.net</title>
+	<!-- Bootstrap core CSS -->
+	<link href="~/css/blog-css/bootstrap.min.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="~/css/blog-css/mediumish.css" rel="stylesheet">
+	<!-- Footer -->
+	<link rel="stylesheet" href="~/css/footer.css">
+</head>
+<body>
+
+	<!-- Begin Nav
+	================================================== -->
+	<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="container">
+			<!-- Begin Logo -->
+			<a class="navbar-brand" asp-controller="Home" asp-action="Home">
+				<img src="~/image/Logo.png" alt="logo">
+			</a>
+			<!-- End Logo -->
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<!-- Begin Menu -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Stories <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="post.html">Post</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="author.html">Author</a>
+					</li>
+				</ul>
+				<!-- End Menu -->
+				<!-- Begin Search -->
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+					<span class="search-icon"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg></span>
+				</form>
+				<!-- End Search -->
+			</div>
+		</div>
+	</nav>
+	<!-- End Nav
+	================================================== -->
+	@{
+		@RenderBody();
+	}
+	<!-- Begin Footer
+		================================================== -->
+	<footer>
+		<div class="footer-content">
+			<div class="logo-footer">
+				<img src="~/image/Logo.png" alt="ETERNAL SPARKLE Logo">
+			</div>
+
+			<div class="footer-section">
+				<h2>About us</h2>
+				<div class="footer-links">
+					<a href="#">Home</a>
+					<a asp-controller="Home" asp-action="AboutUs">About</a>
+					<a href="#">Contact</a>
+				</div>
+			</div>
+
+			<div class="footer-section">
+				<h2>Shop</h2>
+				<div class="footer-links">
+					<a href="/Products/RingView">Earrings</a>
+					<a href="/Products/NecklaceView">Necklaces</a>
+				</div>
+			</div>
+
+			<div class="footer-section">
+				<h2>Address</h2>
+				<div class="address-content">
+					<p>Lô E2a-7, Đường D1 Khu Công nghệ cao, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh</p>
+					<p>Contact@info.com</p>
+					<p>000-0000-000</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright © 2024 ETERNAL SPARKLE DIAMOND STORE | Powered by Group 5
+				<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+			</p>
+		</div>
+	</footer>
+	<!-- End Footer
+	================================================== -->
+	<!-- /.container -->
+	<!-- Bootstrap core JavaScript
+		================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

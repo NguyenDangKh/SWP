@@ -54,6 +54,10 @@ namespace DIAMOND.Controllers
         {
             return View();
         }
+        public IActionResult BraceletsView()
+        {
+            return View();
+        }
 
     }
 }

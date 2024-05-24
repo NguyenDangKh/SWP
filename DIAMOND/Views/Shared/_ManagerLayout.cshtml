@@ -1,245 +1,554 @@
-﻿<!doctype html>
-<html class="no-js" lang="en">
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Dashboard</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- favicon
-		============================================ -->
-	<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico">
-	<!-- Google Fonts
-		============================================ -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-	<!-- Bootstrap CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/bootstrap.min.css">
-	<!-- Bootstrap CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/font-awesome.min.css">
-	<!-- nalika Icon CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/nalika-icon.css">
-	<!-- animate CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/animate.css">
-	<!-- normalize CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/normalize.css">
-	<!-- meanmenu icon CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/meanmenu.min.css">
-	<!-- main CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/main.css">
-	<!-- mCustomScrollbar CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/scrollbar/jquery.mCustomScrollbar.min.css">
-	<!-- metisMenu CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/metisMenu/metisMenu.min.css">
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/metisMenu/metisMenu-vertical.css">
-	<!-- style CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/leftnavtemplate.css">
-	<!-- responsive CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/LeftNavTemplate/responsive.css">
-	<!-- Profile CSS
-		============================================ -->
-	<link rel="stylesheet" href="~/css/profile.css">
-	<!-- modernizr JS
-		============================================ -->
-	<script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="~/image/LeftNavBar/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+
+	<link href="~/css/LeftNavTemplate/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<!-- Left Sidebar -->
-	<div class="left-sidebar-pro">
-		<nav id="sidebar" class="">
-			<div class="sidebar-header">
-				<a href="index-1.html"><img class="main-logo" src="#" alt="" /></a>
-				<strong><img src="#" alt="" /></strong>
-			</div>
-			<div class="nalika-profile">
-				<div class="profile-dtl">
-					<a href="#"><img src="img/notification/4.jpg" alt="" /></a>
-					<span>Profile</span>
-					<h2>Vuong <span class="min-dtn">Tran</span></h2>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+					<span class="align-middle">AdminKit</span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-profile.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-sign-in.html">
+							<i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-sign-up.html">
+							<i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+							<i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+						</a>
+					</li>
+
+					<li class="sidebar-header">
+						Tools & Components
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-buttons.html">
+							<i class="align-middle" data-feather="square"></i> <span class="align-middle">Buttons</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-forms.html">
+							<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Forms</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-cards.html">
+							<i class="align-middle" data-feather="grid"></i> <span class="align-middle">Cards</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-typography.html">
+							<i class="align-middle" data-feather="align-left"></i> <span class="align-middle">Typography</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="icons-feather.html">
+							<i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>
+						</a>
+					</li>
+
+					<li class="sidebar-header">
+						Plugins & Addons
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="charts-chartjs.html">
+							<i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="maps-google.html">
+							<i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
+						<div class="mb-3 text-sm">
+							Are you looking for more components? Check out our premium version.
+						</div>
+						<div class="d-grid">
+							<a href="upgrade-to-pro.html" class="btn btn-primary">Upgrade to Pro</a>
+						</div>
+					</div>
 				</div>
-				<div class="profile-social-dtl">
-					<ul class="dtl-social">
-						<li><a href="#"><i class="icon nalika-facebook"></i></a></li>
-						<li><a href="#"><i class="icon nalika-twitter"></i></a></li>
-						<li><a href="#"><i class="icon nalika-linkedin"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="left-custom-menu-adp-wrap comment-scrollbar">
-				<nav class="sidebar-nav left-sidebar-menu-pro">
-					<ul class="metismenu" id="menu1">
-						<li class="active">
-							<a class="has-arrow" href="index-1.html">
-								<i class="icon nalika-home icon-wrap"></i>
-								<span class="mini-click-non">Ecommerce</span>
-							</a>
-							<ul class="submenu-angle" aria-expanded="true">
-								<li><a title="Dashboard" asp-controller="Admin" asp-action="Dashboard"><span class="mini-sub-pro">Dashboard</span></a></li>
-								<li><a title="Product List" asp-controller="Admin" asp-action="ProductView"><span class="mini-sub-pro">Product List</span></a></li>
-								<li><a title="Accounts Management" href="#"><span class="mini-sub-pro">Accounts Management</span></a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
 			</div>
 		</nav>
-	</div>
-	<!-- Start Welcome area -->
-	<div class="all-content-wrapper">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="logo-pro">
-						<a href="index-1.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="header-advance-area">
-			<div class="header-top-area">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="header-top-wraper">
-								<div class="row">
-									<div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
-										<div class="menu-switcher-pro">
-											<button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
-												<i class="icon nalika-menu-task"></i>
-											</button>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
-										<div class="header-top-menu tabl-d-n">
-											<div class="breadcome-heading">
-												<form role="search" class="">
-													<input type="text" placeholder="Search..." class="form-control">
-													<a href=""><i class="fa fa-search"></i></a>
-												</form>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">30m ago</div>
 											</div>
 										</div>
-									</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.8</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Christina accepted your request.</div>
+												<div class="text-muted small mt-1">14h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Mobile Menu start -->
-			<div class="mobile-menu-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="mobile-menu">
-								<nav id="dropdown">
-									<ul class="mobile-menu-nav">
-										<li>
-											<a data-toggle="collapse" data-target="#Charts" href="#">Home <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-											<ul class="collapse dropdown-header-top">
-												<li><a href="index-1.html">Dashboard</a></li>
-												<li><a href="product-list.html">Product List</a></li>
-												<li><a href="#">Accounts Management</a></li>
-											</ul>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Mobile Menu end -->
-			<div class="breadcome-area">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="breadcome-list">
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-										<div class="breadcomb-wp">
-											<div class="breadcomb-icon">
-												<i class="icon nalika-home"></i>
-											</div>
-											<div class="breadcomb-ctn">
-												<h2>Dashboard</h2>
-												<p>Welcome to Vuong <span class="bread-ntd">Admin</span></p>
-											</div>
-										</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-square"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 New Messages
 									</div>
 								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="~/image/LeftNavBar/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Vanessa Tucker</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="~/image/LeftNavBar/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">William Harris</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="~/image/LeftNavBar/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Christina Mason</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="~/image/LeftNavBar/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Sharon Lessman</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all messages</a>
+								</div>
 							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+								<i class="align-middle" data-feather="settings"></i>
+							</a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+								<img src="~/image/LeftNavBar/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			@{
+				@RenderBody()
+				;
+			}
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>AdminKit</strong></a> - <a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>Bootstrap Admin Template</strong></a>								&copy;
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Terms</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
-		@{
-			@RenderBody()
-			;
-		}
-
 	</div>
 
-	<!-- jquery
-		============================================ -->
-	<script src="~/js/vendor/jquery-1.12.4.min.js"></script>
-	<!-- bootstrap JS
-		============================================ -->
-	<script src="~/js/bootstrap.min.js"></script>
-	<!-- wow JS
-		============================================ -->
-	<script src="~/js/wow.min.js"></script>
-	<!-- price-slider JS
-		============================================ -->
-	<script src="~/js/jquery-price-slider.js"></script>
-	<!-- meanmenu JS
-		============================================ -->
-	<script src="~/js/jquery.meanmenu.js"></script>
-	<!-- owl.carousel JS
-		============================================ -->
-	<script src="~/js/owl.carousel.min.js"></script>
-	<!-- sticky JS
-		============================================ -->
-	<script src="~/js/jquery.sticky.js"></script>
-	<!-- scrollUp JS
-		============================================ -->
-	<script src="~/js/jquery.scrollUp.min.js"></script>
-	<!-- mCustomScrollbar JS
-		============================================ -->
-	<script src="~/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="~/js/scrollbar/mCustomScrollbar-active.js"></script>
-	<!-- metisMenu JS
-		============================================ -->
-	<script src="~/js/metisMenu/metisMenu.min.js"></script>
-	<script src="~/js/metisMenu/metisMenu-active.js"></script>
-	<!-- sparkline JS
-		============================================ -->
-	<script src="~/js/sparkline/jquery.sparkline.min.js"></script>
-	<script src="~/js/sparkline/jquery.charts-sparkline.js"></script>
-	<!-- float JS
-		============================================ -->
-	<script src="~/js/flot/jquery.flot.js"></script>
-	<script src="~/js/flot/jquery.flot.resize.js"></script>
-	<script src="~/js/flot/curvedLines.js"></script>
-	<script src="~/js/flot/flot-active.js"></script>
-	<!-- plugins JS
-		============================================ -->
-	<script src="~/js/plugins.js"></script>
-	<!-- main JS
-		============================================ -->
-	<script src="~/js/main.js"></script>
+	<script src="~/js/LeftNavBar/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var markers = [{
+				coords: [31.230391, 121.473701],
+				name: "Shanghai"
+			},
+			{
+				coords: [28.704060, 77.102493],
+				name: "Delhi"
+			},
+			{
+				coords: [6.524379, 3.379206],
+				name: "Lagos"
+			},
+			{
+				coords: [35.689487, 139.691711],
+				name: "Tokyo"
+			},
+			{
+				coords: [23.129110, 113.264381],
+				name: "Guangzhou"
+			},
+			{
+				coords: [40.7127837, -74.0059413],
+				name: "New York"
+			},
+			{
+				coords: [34.052235, -118.243683],
+				name: "Los Angeles"
+			},
+			{
+				coords: [41.878113, -87.629799],
+				name: "Chicago"
+			},
+			{
+				coords: [51.507351, -0.127758],
+				name: "London"
+			},
+			{
+				coords: [40.416775, -3.703790],
+				name: "Madrid "
+			}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+
 </body>
 
 </html>

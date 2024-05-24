@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "_LeftNavBarLayout";
 }
-
+@*
 <div class="product-status mg-b-30">
     <div class="container-fluid">
         <div class="row">
@@ -153,4 +153,93 @@
             </div>
         </div>
     </div>
-</div>
+</div> *@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        .status-available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-out-of-stock {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Product Management</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Product rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Edit Product Modal -->
+    <div class="modal fade" id="editProductModal" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="edit-product-form">
+                        <input type="hidden" id="edit-product-id">
+                        <div class="form-group">
+                            <label for="edit-product-name">Name</label>
+                            <input type="text" class="form-control" id="edit-product-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-product-price">Price</label>
+                            <input type="number" class="form-control" id="edit-product-price" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-product-quantity">Quantity</label>
+                            <input type="number" class="form-control" id="edit-product-quantity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-product-status">Status</label>
+                            <select class="form-control" id="edit-product-status" required>
+                                <option value="Available">Available</option>
+                                <option value="Out of Stock">Out of Stock</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/js/productmanagement.js"></script>
+</body>
+</html>

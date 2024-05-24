@@ -17,6 +17,7 @@
                     <th>Customer_name</th>
                     <th>Total</th>
                     <th>Status</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody id="order-list">

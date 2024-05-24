@@ -315,7 +315,9 @@
 }
 
 .d-flex {
-  display: flex !important;
+    display: flex !important;
+    height: fit-content;
+    padding-top: 10px;
 }
 
 .d-inline-flex {

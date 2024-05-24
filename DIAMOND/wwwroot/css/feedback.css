@@ -1,0 +1,100 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    position: relative; /* Necessary for overlay positioning */
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #4CAF50; /* Updated border color */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #4CAF50; /* Updated border color */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    resize: vertical; /* Allow the user to resize the textarea vertically */
+}
+
+    .form-control.textarea {
+        height: 200px; /* Set initial height of the textarea */
+    }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-group.submit-group {
+        align-items: flex-end;
+    }
+
+.btn-primary {
+    padding: 10px 20px; /* Smaller button size */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure it sits above the form */
+    font-size: 1.2rem;
+    color: #333; /* Darker text color for better readability */
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.overlay {
+    /* Các thuộc tính hiện có */
+    align-items: center; /* Thêm thuộc tính này */
+}
+
+    .overlay a {
+        /* Các thuộc tính hiện có */
+        vertical-align: middle; /* Thêm thuộc tính này */
+        padding: 0 5px;
+    }
+
+        .overlay a:hover {
+            text-decoration: underline;
+        }
+

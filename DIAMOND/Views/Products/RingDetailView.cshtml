@@ -123,8 +123,8 @@
             </div>
         </div>
 
-        <div class="form-container" id="commentForm">
-            <form method="post">
+        <<div class="form-container" id="commentForm" style="display: @(!User.Identity.IsAuthenticated ? "block" : "none")">
+            <form method="post" action="@Url.Action("PostComment", "Comments")">
                 <div class="form-group">
                     <label class="form-label" for="myeditor">Bình luận</label>
                     <textarea class="form-control textarea" name="content" id="myeditor"></textarea>
@@ -132,12 +132,50 @@
                 <div class="form-group submit-group">
                     <button type="submit" class="btn-primary">Gửi</button>
                     <a href="#"></a>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <div class="overlay">
+                            <a href="@Url.Action("Login", "Home", new { returnUrl = Context.Request.Path })">Vui lòng đăng nhập</a>
+                        </div>
+                    }
                 </div>
             </form>
-            <div class="overlay" id="loginMessage">
-                Vui lòng <a href="@Url.Action("Login", "Login")">đăng nhập để bình luận.</a>
-            </div>
         </div>
+
+        <script>
+            // Đảo ngược hiển thị của form bình luận dựa trên trạng thái đăng nhập
+            function toggleCommentForm() {
+                var commentForm = document.getElementById('commentForm');
+
+                if (commentForm) {
+                    if (!isLoggedIn()) {
+                        commentForm.style.display = 'block';
+                    } else {
+                        commentForm.style.display = 'none';
+                    }
+                }
+            }
+
+            // Fake login check
+            function isLoggedIn() {
+                // Thay thế với logic kiểm tra đăng nhập thực tế
+                return false; // Đổi thành true nếu người dùng đã đăng nhập
+            }
+
+            // Gọi hàm toggle khi trang được tải
+            window.onload = toggleCommentForm;
+        </script>
+
+
+        <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+
+        </script>
+        <script src="~/js/jquery-3.4.1.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/jquery.nice-number.js"></script>
+        <script src="~/js/slick.min.js"></script>
+
+
         <div class="others">
             <h4>Related products</h4>
             <div class="related-product">
@@ -179,31 +217,6 @@
     </div>
 </div>
 
-<script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
-<script>
-    // Fake login check
-    function isLoggedIn() {
-        // Replace with actual login check logic
-        return false; // Change to true if the user is logged in
-    }
-
-    window.onload = function () {
-        if (isLoggedIn()) {
-            document.getElementById('loginMessage').style.display = 'none';
-            ClassicEditor
-                .create(document.querySelector('#myeditor'))
-                .catch(error => {
-                    console.error(error);
-                });
-        } else {
-            document.getElementById('loginMessage').style.display = 'flex';
-        }
-    };
-</script>
-<script src="~/js/jquery-3.4.1.min.js"></script>
-<script src="~/js/bootstrap.min.js"></script>
-<script src="~/js/jquery.nice-number.js"></script>
-<script src="~/js/slick.min.js"></script>
 <script>
     $('.product-img-main-active').slick({
         slidesToShow: 1,
@@ -248,3 +261,6 @@
         nextArrow: '<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
     });
 </script>
+
+
+   

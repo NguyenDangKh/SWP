@@ -9,7 +9,7 @@ namespace DIAMOND.Controllers
             return View();
         }
 
-        public IActionResult Dashboard() 
+        public IActionResult Dashboard()
         {
             return View();
         }
@@ -19,7 +19,7 @@ namespace DIAMOND.Controllers
             return View();
         }
 
-        public IActionResult ProductView()
+        public IActionResult ProductsManagement()
         {
             return View();
         }
@@ -27,12 +27,22 @@ namespace DIAMOND.Controllers
         public IActionResult OrderManager()
         {
             return View();
-
         }
+
+
+
+
+
+       
         public IActionResult CertificationView()
         {
             return View();
         }
 
+
+
+
+
     }
 }
+

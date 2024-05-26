@@ -1,8 +1,8 @@
 ﻿// Sample account data
 let accounts = [
-    { id: 1, name: 'Alice Johnson', email: 'alice@example.com', role: 'Admin', status: 'Active' },
-    { id: 2, name: 'Bob Smith', email: 'bob@example.com', role: 'User', status: 'Inactive' },
-    { id: 3, name: 'Charlie Brown', email: 'charlie@example.com', role: 'User', status: 'Active' }
+    { id: 1, name: 'Alice Johnson', email: 'alice@example.com', role: 'Quản trị viên', status: 'Hoạt động' },
+    { id: 2, name: 'Bob Smith', email: 'bob@example.com', role: 'Người dùng', status: 'Ngừng hoạt động' },
+    { id: 3, name: 'Charlie Brown', email: 'charlie@example.com', role: 'Người dùng', status: 'Hoạt động' }
 ];
 
 // Function to render account list
@@ -10,15 +10,16 @@ function renderAccountList() {
     const accountList = document.getElementById('account-list');
     accountList.innerHTML = '';
     accounts.forEach(account => {
+        const statusClass = account.status === 'Hoạt động' ? 'status-active' : 'status-inactive';
         accountList.innerHTML += `
             <tr>
                 <td>${account.id}</td>
                 <td>${account.name}</td>
                 <td>${account.email}</td>
                 <td>${account.role}</td>
-                <td>${account.status}</td>
+                <td class="${statusClass}">${account.status}</td>
                 <td>
-                    <button class="btn btn-sm btn-primary" onclick="editAccount(${account.id})">Edit</button>
+                    <button class="btn btn-sm btn-primary" onclick="editAccount(${account.id})">Chỉnh sửa</button>
                 </td>
             </tr>
         `;

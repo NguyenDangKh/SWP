@@ -6,11 +6,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Management</title>
+    <title>Quản lý tài khoản</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .container {
-            margin-top: 50px;
+            margin-top: 30px;
+        }
+
+        .text-center{
+            margin-bottom: 20px;
         }
 
         .status-active {
@@ -26,16 +30,16 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="text-center">Account Management</h2>
+        <h2 class="text-center">Quản lý tài khoản</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
+                    <th>Tên tài khoản</th>
                     <th>Email</th>
-                    <th>Role</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th>Vai trò</th>
+                    <th>Tình trạng</th>
+                    <th>Hành động</th>
                 </tr>
             </thead>
             <tbody id="account-list">
@@ -49,7 +53,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editAccountModalLabel">Edit Account</h5>
+                    <h5 class="modal-title" id="editAccountModalLabel">Chỉnh sửa</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -58,7 +62,7 @@
                     <form id="edit-account-form">
                         <input type="hidden" id="edit-account-id">
                         <div class="form-group">
-                            <label for="edit-account-name">Name</label>
+                            <label for="edit-account-name">Tên tài khoản</label>
                             <input type="text" class="form-control" id="edit-account-name" required>
                         </div>
                         <div class="form-group">
@@ -66,20 +70,20 @@
                             <input type="email" class="form-control" id="edit-account-email" required>
                         </div>
                         <div class="form-group">
-                            <label for="edit-account-role">Role</label>
+                            <label for="edit-account-role">Vai trò</label>
                             <select class="form-control" id="edit-account-role" required>
-                                <option value="Admin">Admin</option>
-                                <option value="User">User</option>
+                                <option value="Quản trị viên">Quản trị viên</option>
+                                <option value="Người dùng">Người dùng</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="edit-account-status">Status</label>
+                            <label for="edit-account-status">Tình trạng</label>
                             <select class="form-control" id="edit-account-status" required>
-                                <option value="Active">Active</option>
-                                <option value="Inactive">Inactive</option>
+                                <option value="Hoạt động">Hoạt động</option>
+                                <option value="Ngừng hoạt động">Ngừng hoạt động</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
                     </form>
                 </div>
             </div>
@@ -89,6 +93,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="~/js/accountmanagement.js"></script>
+    <script src="~/js/accountsManagement.js"></script>
 </body>
 </html>

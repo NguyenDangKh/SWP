@@ -164,7 +164,11 @@
 
     <style>
         .container {
-            margin-top: 50px;
+            margin-top: 30px;
+        }
+
+        .text-center{
+            margin-bottom: 20px;
         }
 
         .status-available {
@@ -180,16 +184,16 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="text-center">Product Management</h2>
+        <h2 class="text-center">Quản lý sản phẩm</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Tình trạng</th>
+                    <th>Hành động</th>
                 </tr>
             </thead>
             <tbody id="product-list">
@@ -203,7 +207,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+                    <h5 class="modal-title" id="editProductModalLabel">Chỉnh sửa</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -212,25 +216,25 @@
                     <form id="edit-product-form">
                         <input type="hidden" id="edit-product-id">
                         <div class="form-group">
-                            <label for="edit-product-name">Name</label>
+                            <label for="edit-product-name">Tên sản phẩm</label>
                             <input type="text" class="form-control" id="edit-product-name" required>
                         </div>
                         <div class="form-group">
-                            <label for="edit-product-price">Price</label>
+                            <label for="edit-product-price">Giá</label>
                             <input type="number" class="form-control" id="edit-product-price" required>
                         </div>
                         <div class="form-group">
-                            <label for="edit-product-quantity">Quantity</label>
+                            <label for="edit-product-quantity">Số lượng</label>
                             <input type="number" class="form-control" id="edit-product-quantity" required>
                         </div>
                         <div class="form-group">
-                            <label for="edit-product-status">Status</label>
+                            <label for="edit-product-status">Tình trạng</label>
                             <select class="form-control" id="edit-product-status" required>
-                                <option value="Available">Available</option>
-                                <option value="Out of Stock">Out of Stock</option>
+                                <option value="Available">Còn hàng</option>
+                                <option value="Out of Stock">Hết hàng</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
                     </form>
                 </div>
             </div>
@@ -240,6 +244,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="~/js/productmanagement.js"></script>
+    <script src="~/js/productsManagement.js"></script>
 </body>
 </html>

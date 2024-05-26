@@ -1,5 +1,4 @@
-﻿
-.form-container {
+﻿.form-container {
     position: relative; /* Necessary for overlay positioning */
     width: 100%;
     max-width: 600px;
@@ -55,36 +54,3 @@
     .btn-primary:hover {
         background-color: #0056b3;
     }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10; /* Ensure it sits above the form */
-    font-size: 1.2rem;
-    color: #333; /* Darker text color for better readability */
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.overlay {
-    /* Các thuộc tính hiện có */
-    align-items: center; /* Thêm thuộc tính này */
-}
-
-    .overlay a {
-        /* Các thuộc tính hiện có */
-        vertical-align: middle; /* Thêm thuộc tính này */
-        padding: 0 5px;
-    }
-
-        .overlay a:hover {
-            text-decoration: underline;
-        }
